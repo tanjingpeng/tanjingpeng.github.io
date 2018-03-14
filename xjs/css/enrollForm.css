@@ -1,5 +1,8 @@
-.h-title{margin-left:320px;}
-.enrollForm{margin:40px 0 60px 150px;}
+body{text-align:center;} 
+.h-title{margin-left:200px;}
+.enrollForm{
+	display: flex;
+}
 .enrollForm dl{margin-top:20px;overflow:hidden;}
 .enrollForm dt{float:left;width:92px;text-align:right;font-size:18px;line-height:36px;}
 .enrollForm dt span{font-family:"微软雅黑"}
@@ -7,6 +10,16 @@
 .enrollForm dd>span {display: inline-block;max-width: 300px;vertical-align: middle;color:#666;padding-left:10px;}
 .enrollForm .txt{width:300px;font-family:"微软雅黑";border:1px solid #CCCCCC;border-radius:3px;line-height:28px;}
 .enrollForm .txt.eCode{width:170px;margin-top: -5px;}
+.enroll-btn{line-height:40px;text-align:center;background:#74BF49;color:#fff;border-radius:3px;font-family:"微软雅黑";font-size:16px;font-weight:300}
+.enroll-btn:hover{background:#21b436;color:#fff;}
+
+
+
+#btnImgCode{
+	 width: 70px; 
+	 height: 25px;
+}
+
 .img{
 	width: 400px;
 	height: 600px;
@@ -15,3 +28,5 @@
 .img-div{
 	margin:20px 0 60px 172px;
 }
+
+

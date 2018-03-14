@@ -7,45 +7,47 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
+<script type="text/javascript">
+	var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+	var browser = navigator.userAgent.toLowerCase();
+	var isMobile = false;
+	for (var i = 0; i < mobileAgent.length; i++) {
+		if (browser.indexOf(mobileAgent[i]) != -1) {
+		    isMobile = true;
+		    var domian = document.domain;
+		    location.href = "http://" + domian + "/ZT201803B/m/index.html";
+		    break;
+			}
+		}
+</script>
 <h2 class="h-title">喜聚舍活动报名表</h2>
 <div class="enrollForm">
-	<dl>
-		<dt>
-			<span>姓名：</span>
-		</dt>
-		<dd>
-			<input type="text" class="txt" id="userName" maxlength="16" />
-            <span>为了方便确认报名信息准确，请输入真实姓名，谢谢合作！</span>
-		</dd>
-	</dl>
-
-	<dl>
-        <dt>
-            <span>手机号：</span>
-        </dt>
-        <dd>
-            <input type="text" class="txt" id="txtMobile" maxlength="11" />
-            <span>请输入11位有效手机号码</span>
-        </dd>
-    </dl>
-
-<!--     <div id="divFirstCheckCode"> -->
-        <dl>
-            <dt>
-                <span>验证码：</span>
-            </dt>
-            <dd>
-                <input type="text" class="txt eCode" id="txtFirstCheckCode" maxlength="6" />
-                <img id="btnImgCode" style=" width: 70px; height: 25px;" src="http://www.zyctd.net/verifycodeimage/verifycodeimagecreater" title="点击更换验证码" onclick="$(this).attr('src', 'http://www.zyctd.net/verifycodeimage/verifycodeimagecreater', '?rnd='')' + Math.random().toString().replace('0.', ''));" />
-                <a href="javascript:void(0);" onclick="$('#btnImgCode').attr('src', 'http://www.zyctd.net/verifycodeimage/verifycodeimagecreater', '?rnd='') + Math.random().toString().replace('0.', ''));">看不清楚？换一张</a>
-            </dd>
-        </dl>
-<!--     </div> -->
+	<div>
+		<font>姓名：</font>	
+		<input type="text" class="txt" id="userName" maxlength="16" />为了方便确认报名信息准确，请输入真实姓名，谢谢合作
+	</div>
+    <div>
+    	<font>手机号：</font>
+ 		<input type="text" class="txt" id="txtMobile" maxlength="11" />请输入11位有效手机号码
+    </div>
+    <div>
+    	<font>验证码：</font>
+		<input type="text" class="txt eCode" id="txtFirstCheckCode" maxlength="6" />
+        <img id="btnImgCode" src="http://www.zyctd.net/verifycodeimage/verifycodeimagecreater" title="点击更换验证码" onclick="$(this).attr('src', 'http://www.zyctd.net/verifycodeimage/verifycodeimagecreater?rnd=' + Math.random().toString().replace('0.', ''));"/>
+        <a href="javascript:void(0);">看不清楚？换一张</a>
+    </div>
+    <button class="enroll-btn">我要报名</button>
 </div>
 
 	<div class="img-div">
 		<image class="img" src="./images/payMe.jpg" />
 		<p>如有任何疑问，请拨打我们电话：15828215285进行咨询，谢谢(*^_^*)</p>
 	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			$('#btnImgCode').attr('src', 'http://www.zyctd.net/verifycodeimage/verifycodeimagecreater?rnd=' + Math.random().toString().replace('0.', ''));
+		});
+	</script>
 </body>
 </html>
