@@ -1,0 +1,246 @@
+﻿<!--
+【VIP视频在线观看】
+
+接口：
+http://yun.zihu.tv/yunparse/?url=
+http://www.wmxz.wang/video.php?url=
+http://www.vipjiexi.com/yun.php?url=
+http://api.cloudparse.com/?url=
+http://v.72du.com/api/?url=
+http://api.47ks.com/webcloud/?v=
+http://000o.cc/jx/ty.php?url=
+http://yyygwz.com/index.php?url=
+http://s1y2.com/?url=
+http://yun.mt2t.com/yun?url=
+  http://mt2t.com/yun?url=
+http://qtzr.net/s/?qt=
+
+
+播放网站：
+http://v.30d.bid
+
+*
+*死链：
+*http://player.gakui.top/?url=
+*http://api.baiyug.cn/vip/index.php?url=
+*http://ckjiexi.duapp.com/?url=
+*http://5qiyi.sdyhy.cn/5qiyi/5qiyi1.php?url=
+*http://5qiyi.sdyhy.cn/5qiyi/5qiyi2.php?url=
+*http://jx.71ki.com/?url=
+*http://www.ou522.cn/t2/1.php?url=
+*http://jx.haokan5.net/ty/tong.php?url=
+*http://jx.haokan5.net/jx/?url=
+*http://jx.ckkgi.top/123.php?url=
+*
+*部份链接来源：
+*http://www.yydy8.com/Common/?url=
+*http://www.200919.com/jiexi/vip.php?url=
+*
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VIP视频在线观看</title>
+  <style>
+    *{
+      font-family: '微软雅黑';
+    }
+    .vip{
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      box-shadow: 6px 7px 20px 3px #eaeaea;
+      text-align: center;
+      margin: auto;
+      line-height: 100px;
+      font-size: 20px;
+      color: white;
+
+      background: -webkit-linear-gradient(-134deg, red, blue); /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(-134deg, red, blue); /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(-134deg, red, blue); /* Firefox 3.6 - 15 */
+      background: linear-gradient(-134deg, red, blue); /* 标准的语法（必须放在最后） */
+    }
+    p{
+      color:#949494 ;
+    }
+    #text{
+      color: #2e2e2e;
+      margin-top: 50px;
+    }
+    #txtIn{
+      border-radius: 30px;
+      outline: none;
+      border: 1px solid #B7B7B7;
+      height: 30px;
+      line-height: 29px;
+      padding-left: 10px;
+      box-shadow: 6px 7px 20px 3px #eaeaea;
+      width: 390px;
+    }
+    #buttom{
+      border-radius: 30px;
+      outline: none;
+      border: 1px solid #B7B7B7;
+      height: 34px;
+      line-height: 34px;
+      padding-left: 10px;
+      box-shadow: 6px 7px 20px 3px #eaeaea;
+      background: black;
+      color: white;
+      width: 176px;
+      cursor: pointer;
+    }
+    #txtIn2{
+      border-radius: 30px;
+      outline: none;
+      border: 1px solid #B7B7B7;
+      height: 32px;
+      line-height: 30px;
+      padding-left: 10px;
+      box-shadow: 6px 7px 20px 3px #eaeaea;
+      width: 100px;
+    }
+    select{
+      border-radius: 30px;
+      outline: none;
+      border: 1px solid #B7B7B7;
+      height: 30px;
+      line-height: 30px;
+      padding-left: 10px;
+      box-shadow: 6px 7px 20px 3px #eaeaea;
+    }
+    a{
+      color: #2e2e2e;
+      text-decoration:none;
+    }
+    #ipc{
+      font-size: 14px;
+      display: none;
+    }
+    .text3 {
+      /*font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;*/
+      /*text-transform: uppercase;*/
+      /*text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;*/
+      /*display: block;*/
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      background: black;
+      padding: 10px 10px;
+      border-radius: 20px;
+      width: 800px;
+      margin: auto;
+      background: -webkit-linear-gradient(-90deg, red, blue); /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(-90deg, red, blue); /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(-90deg, red, blue); /* Firefox 3.6 - 15 */
+      background: linear-gradient(-90deg, red, blue); /* 标准的语法（必须放在最后） */
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #fff, 0 0 70px #fff, 0 0 40px #fff, 0 0 70px #fff;
+    }
+    .text3 p{
+      color: #666666;
+    }
+  </style>
+</head>
+<body style="text-align:center;" onload="javascript:txtIn.focus();">
+
+<noscript>你的浏览器不支持JavaScript!</noscript>
+<p>&nbsp;</p>
+
+<p class="vip">VIP破解</p>
+
+<p id="text">
+视频地址：
+<input id="txtIn" type="text" size="50" title="在这里输入或粘贴在线视频地址，如下：
+http://www.iqiyi.com/v_19rralv4rc.html（北极大冒险）
+http://v.youku.com/v_show/id_XMjQ3ODU0NzIwMA==.html（我不是潘金莲）
+http://www.tudou.com/albumplay/Xme8hIC6MoA.html（超级快递）
+https://v.qq.com/x/cover/fetiylrqxyebh7g.html（魔兽）
+http://film.sohu.com/album/9139603.html（机械师2：复活）
+http://www.le.com/ptv/vplay/26322741.html（盗墓笔记）
+http://www.mgtv.com/b/1027/743974.html（碟中谍2）
+http://vip.pptv.com/show/yUYysRlic7y2QDnY.html（星球大战外传：侠盗一号）
+......" onkeydown="javascript:if(event.keyCode==13){doPlayVIP();txtIn.select();txtIn.focus();};" placeholder="请输入VIP视频地址"/>
+<!--<a href="javascript:void(0);" title="清空文本" onclick="javascript:txtIn.value='';txtIn.focus();">清空</a>-->
+<p>
+  <a>解码接口：</a>
+  <select id="lefturl" onkeydown="javascript:if(event.keyCode==13){doPlayVIP();txtIn.select();txtIn.focus();};">
+    <option value="http://www.wmxz.wang/video.php?url=" selected>wmxz</option>
+    <option value="https://jiexi.071811.cc/jx.php?url=" >石头</option>
+    <option value="http://www.52jiexi.com/tong.php?url=" >52</option>
+    <option value="http://yun.zihu.tv/yunparse/?url=" >zihu</option>
+    <option value="http://www.vipjiexi.com/yun.php?url=">vipjiexi</option>
+    <option value="http://api.cloudparse.com/?url=">cloudparse</option>
+    <option value="http://v.72du.com/api/?url=">72du</option>
+    <option value="http://api.47ks.com/webcloud/?v=">47ks</option>
+    <option value="http://000o.cc/jx/ty.php?url=">000o</option>
+    <option value="http://yyygwz.com/index.php?url=">yyygwz</option>
+    <option value="http://s1y2.com/?url=">s1y2</option>
+    <option value="http://yun.mt2t.com/yun?url=">mt2t</option>
+    <option value="http://qtzr.net/s/?qt=">qtzr</option>
+  </select>
+  <input type="text" id="txtIn2"  placeholder="请输入密码"/>
+  <input type="button" value="VIP解析" onclick="javascript:doPlayVIP();txtIn.select();txtIn.focus();" id="buttom"/>
+</p>
+
+</p>
+
+<p>&nbsp;</p>
+
+
+<p>作者：希怀</p>
+<p>提示：如无法解析VIP 请更换解码接口</p>
+<p>联系作者：1110101111011011110110010111110101</p>
+<!--<div class="text3">-->
+  <!-- -->
+<!--</div>-->
+
+
+<script type="text/javascript">
+<!--
+function doPlayVIP() {
+  var strIn,theurl;
+  var iPos=0;
+  //更改密码
+  var pass='1110110101011010010111110111110011';
+  var pass2='3b5697df3';
+  var key=parseInt(pass2,16)
+  strIn = decodeURIComponent(txtIn.value);
+  var txtIn2=document.getElementById('txtIn2');
+
+  if ( strIn.length<1 ) {
+    alert("【错误提示】\n\n    内容为空，请在文本框内输入或粘贴视频地址！\n\n");
+    return;
+  };
+  if ( txtIn2.value !=key) {
+    alert("密码错误 请联系作者");
+    return;
+  };
+  iPos = strIn.indexOf(".html");
+  if ( iPos>0 ) {
+    txtIn.value = strIn.substr(0,iPos+5);
+  } else {
+    iPos = strIn.indexOf(".shtml");
+    if ( iPos>0 && strIn.indexOf(".sohu.com")>0 ) {
+      txtIn.value = strIn.substr(0,iPos+6);
+    };
+  };
+  theurl = lefturl.value + txtIn.value;
+  window.open(theurl);
+};
+
+document.onkeydown=function(event) {
+  var e = event || window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 13) {
+          doPlayVIP();
+        }
+}
+// -->
+</script>
+
+</body>
+</html>
+<!--
+original:
+NTJwb2ppZeiuuuWdmwpRUee+pO+8mjU2ODU4MDI3MA
+-->
