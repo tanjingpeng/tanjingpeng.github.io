@@ -1,19 +1,118 @@
-body{text-align:center;} 
-.h-title{margin-left:200px;}
-.enrollForm{
-	display: flex;
+
+.content{
+	margin-top: 300px;
 }
-.enrollForm dl{margin-top:20px;overflow:hidden;}
-.enrollForm dt{float:left;width:92px;text-align:right;font-size:18px;line-height:36px;}
-.enrollForm dt span{font-family:"微软雅黑"}
-.enrollForm dd{margin-left:0;float:left;}
-.enrollForm dd>span {display: inline-block;max-width: 300px;vertical-align: middle;color:#666;padding-left:10px;}
-.enrollForm .txt{width:300px;font-family:"微软雅黑";border:1px solid #CCCCCC;border-radius:3px;line-height:28px;}
+
+.h-title{
+	text-align: center;
+}
+
+.userName{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-ms-flex-pack:center;
+	-webkit-justify-content:center;
+	-moz-justify-content:center;
+	justify-content: center;
+
+	margin-bottom: 20px;
+}
+
+.phone{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-ms-flex-pack:center;
+	-webkit-justify-content:center;
+	-moz-justify-content:center;
+	justify-content: center;
+
+	margin:0 172px 20px 0;
+}
+
+.verifycode{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-ms-flex-pack:center;
+	-webkit-justify-content:center;
+	-moz-justify-content:center;
+	justify-content: center;
+
+	margin: 0 258px 20px 0;
+}
+
+.enrollForm .txt{
+	width:300px;
+	font-family:"微软雅黑";
+	border:1px solid #CCCCCC;
+	border-radius:3px;
+	line-height:28px;
+}
+
+.warn-words{
+	padding:10px 10px;
+	font-size: 12px;
+}
+
+div a{
+	color: #333;
+	text-decoration: none;
+}
+
 .enrollForm .txt.eCode{width:170px;margin-top: -5px;}
-.enroll-btn{line-height:40px;text-align:center;background:#74BF49;color:#fff;border-radius:3px;font-family:"微软雅黑";font-size:16px;font-weight:300}
-.enroll-btn:hover{background:#21b436;color:#fff;}
 
+.enroll-btn{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
 
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-ms-flex-pack:center;
+	-webkit-justify-content:center;
+	-moz-justify-content:center;
+	justify-content: center;
+}
+
+.enroll-btn button{
+	width: 200px;
+	line-height:40px;
+	text-align:center;
+	background:#74BF49;
+	color:#fff;
+	border-radius:3px;
+	font-family:"微软雅黑";
+	font-size:16px;
+	font-weight:300;
+}
+
+.enroll-btn button:hover{
+	background:#21b436;
+	color:#fff;
+}
 
 #btnImgCode{
 	 width: 70px; 
@@ -26,7 +125,8 @@ body{text-align:center;}
 }
 
 .img-div{
-	margin:20px 0 60px 172px;
+	display: none;
+	text-align: center;
 }
 
 
