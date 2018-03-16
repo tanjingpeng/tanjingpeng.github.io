@@ -6,9 +6,21 @@
 <link rel="stylesheet" type="text/css" href="./css/enrollForm.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="./js/enroll.js"></script>
-
 </head>
 <body>
+	<script type="text/javascript">
+		var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+	var browser = navigator.userAgent.toLowerCase();
+	var isMobile = false;
+	for (var i = 0; i < mobileAgent.length; i++) {
+		if (browser.indexOf(mobileAgent[i]) != -1) {
+		    isMobile = true;
+		    var domian = document.domain;
+		    location.href = "http://" + domian + "/ZT201803B/m/index.html";
+		    break;
+			}
+		}
+	</script>
 <div class="content">
 <h1 class="h-title">喜聚舍活动报名表</h1>
 <div class="enrollForm">
